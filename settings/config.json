@@ -1,6 +1,9 @@
 {
   "token" : "",
   "prefix" : ".",
-  "consumer_key" : "ck_3b96cb7089fb114f9c482a67e616be062020179b",
-  "consumer_secret" : "cs_4cb386f3e1e5b5351ceea67531338bf51e0e4d53"
+  "consumer_key" : "0",
+  "consumer_secret" : "0"
+
 }
+
+"_comment": "token: token bot, replace consumer_key and consumer_secret with your own"

@@ -1,8 +1,9 @@
 {
-  "{product_name}" : {product_id},
-  "{product_name}" : {product_id},
-  "{product_name}" : {product_id}
+  "{product_name}" : 0,
+  "{product_name}" : 0,
+  "{product_name}" : 0
 
 }
 
-# remove {} and replace the name and id with your own
+# remove {} and replace the name (product name) and 0 (product ID) with your own
+

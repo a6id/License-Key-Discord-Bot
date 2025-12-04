@@ -16,8 +16,8 @@ bot = None  # obj
 products = None  # dict
 admins = None  # list
 
-SITE_LINK = 'https://eudoramods.com'
-LOGO_LINK = f'{SITE_LINK}/wp-content/uploads/2024/02/cropped-Eudora_big.png'
+SITE_LINK = 'https://google.com'
+LOGO_LINK = f'{SITE_LINK}/wp-content/uploads/image.png'
 SETTINGS_PATH = os.getcwd() + '\\EudoraBot\\settings\\'
 MISC_PATH = os.getcwd() + '\\EudoraBot\\misc\\'
 LICENSE_STATUS = {
@@ -83,7 +83,7 @@ def build_embed(title, purchasing: bool = True) -> discord.Embed:
     if purchasing:
         description = 'Thank you for purchasing! Here are your key(s):'
     else:
-        description = "EudoraMods miscellaneous."
+        description = "miscellaneous."
 
     embed_builder = discord.Embed(
         title=title,
@@ -91,9 +91,9 @@ def build_embed(title, purchasing: bool = True) -> discord.Embed:
         description=description,
         color=0xff0d55
     )
-    embed_builder.set_author(name='EudoraMods', url=SITE_LINK, icon_url=LOGO_LINK)
+    embed_builder.set_author(name='', url=SITE_LINK, icon_url=LOGO_LINK)
     embed_builder.set_thumbnail(url=LOGO_LINK)
-    embed_builder.set_footer(text=f'{SITE_LINK} | Software Resellers')
+    embed_builder.set_footer(text=f'{SITE_LINK} | ')
 
     return embed_builder
 
@@ -183,7 +183,7 @@ async def check(ctx, license: str):
 
 @bot.command(aliases=['give'])
 async def manual(ctx, product: str, license: str):
-    embed_builder = build_embed('EudoraMods Website')
+    embed_builder = build_embed('Website')
 
     embed_builder.add_field(name='KEY', value=license, inline=True)
 

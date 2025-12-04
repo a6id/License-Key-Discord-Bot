@@ -1,5 +1,8 @@
 {
-  "midnight" : 375,
-  "memesense" : 91,
-  "fecurity" : 377
+  "{product_name}" : {product_id},
+  "{product_name}" : {product_id},
+  "{product_name}" : {product_id}
+
 }
+
+# remove {} and replace the name and id with your own
